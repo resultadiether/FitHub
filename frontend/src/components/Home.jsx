@@ -2,9 +2,38 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
+
+  export default function Home() {
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const url = 'http://localhost:8000/home?action=all';
+        fetch(url)
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return res.json();
+            })
+            .then(json => {
+                setData(json);
+                setLoading(false);
+            })
+            .catch(err => {
+                setError(err.message);
+                setLoading(false);
+            });
+    }, []);
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error}</div>;
+    if (!data) return <div>No content</div>;
+
+    const { hero = {}, features = [], benefits = [], cta = {} } = data;
+
   return (
     <main>
-      {/* Hero Section */}
+      /* Hero Section */
       <section className="hero">
         <div className="hero-content">
           <h1>Your Complete Fitness Journey</h1>
