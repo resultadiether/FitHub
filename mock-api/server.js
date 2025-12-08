@@ -51,10 +51,13 @@ db.serialize(() => {
     if (count === 0) {
       const stmt = db.prepare(`INSERT INTO exercises (name, category, difficulty, primary_muscles, equipment, instructions, video_url) VALUES (?, ?, ?, ?, ?, ?, ?)`)
       const seed = [
-        ['Push-ups', 'Chest', 'Beginner', 'Chest, Triceps, Shoulders', 'Bodyweight', 'Get in plank position. Lower body until chest nearly touches floor. Push back up.', null],
-        ['Squats', 'Legs', 'Beginner', 'Quadriceps, Glutes, Hamstrings', 'Bodyweight', 'Stand with feet shoulder-width apart. Lower hips back and down. Return to standing.', null],
-        ['Deadlifts', 'Back', 'Intermediate', 'Back, Glutes, Hamstrings', 'Barbell', 'Stand with feet hip-width apart. Grip bar. Lift by extending hips and knees.', null],
-        ['Bench Press', 'Chest', 'Intermediate', 'Chest, Triceps, Shoulders', 'Barbell, Bench', 'Lie on bench. Lower bar to chest. Press up until arms extended.', null]
+        ['Push-ups', 'Chest', 'Beginner', 'Chest, Triceps, Shoulders', 'Bodyweight', 'Get in plank position with hands shoulder-width apart. Lower your body until your chest nearly touches the floor. Push back up to starting position. Keep your core tight and body in a straight line throughout.', null],
+        ['Pull-ups', 'Back', 'Intermediate', 'Back, Biceps, Shoulders', 'Pull-up Bar', 'Grip the bar with hands slightly wider than shoulder-width. Pull your body up until your chin clears the bar. Lower yourself back down with control. Keep your core engaged and avoid swinging.', null],
+        ['Squats', 'Legs', 'Beginner', 'Quadriceps, Glutes, Hamstrings', 'Bodyweight', 'Stand with feet shoulder-width apart. Keep your chest up and core tight. Lower your hips back and down as if sitting in a chair. Lower until thighs are parallel to ground. Push through heels to stand back up.', null],
+        ['Planks', 'Core', 'Beginner', 'Core, Shoulders, Chest', 'Bodyweight', 'Get into a forearm plank position with elbows under shoulders. Keep your body in a straight line from head to heels. Engage your core and glutes. Hold this position without letting hips sag. Breathe steadily throughout.', null],
+        ['Sit-ups', 'Core', 'Beginner', 'Abdominals, Hip Flexors', 'Bodyweight', 'Lie on your back with knees bent and feet flat on floor. Place hands behind your head or across your chest. Engage your core and lift your shoulders off the ground. Lower back down with control. Focus on using your abs, not pulling on your neck.', null],
+        ['Deadlifts', 'Back', 'Intermediate', 'Back, Glutes, Hamstrings', 'Barbell', 'Stand with feet hip-width apart. Grip bar with hands just outside legs. Keep chest up and core tight. Lift by extending hips and knees simultaneously. Drive through heels. Return to starting position with control.', null],
+        ['Bench Press', 'Chest', 'Intermediate', 'Chest, Triceps, Shoulders', 'Barbell, Bench', 'Lie on bench with feet flat on floor. Grip bar slightly wider than shoulders. Lower bar to upper chest. Press up explosively until arms extended. Maintain control on the descent.', null]
       ]
       for (const s of seed) stmt.run(s)
       stmt.finalize()

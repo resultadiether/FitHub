@@ -5,6 +5,12 @@ import Exercises from './components/Exercises'
 import ExerciseDetail from './components/ExerciseDetail'
 import Coaching from './components/Coaching'
 import Nutrition from './components/Nutrition'
+import Beginners from './components/Beginners'
+import Intermediate from './components/Intermediate'
+import NutritionGuide from './components/NutritionGuide'
+import BudgetFriendly from './components/BudgetFriendly'
+import HomeTraining from './components/HomeTraining'
+import GoalAchievement from './components/GoalAchievement'
 import './App.css'
 
 export default function App() {
@@ -40,6 +46,12 @@ export default function App() {
           <Route path="/exercises/:id" element={<ExerciseDetail />} />
           <Route path="/coaching" element={<Coaching />} />
           <Route path="/nutrition" element={<Nutrition />} />
+          <Route path="/beginners" element={<Beginners />} />
+          <Route path="/intermediate" element={<Intermediate />} />
+          <Route path="/nutrition-guide" element={<NutritionGuide />} />
+          <Route path="/budget-friendly" element={<BudgetFriendly />} />
+          <Route path="/home-training" element={<HomeTraining />} />
+          <Route path="/goals" element={<GoalAchievement />} />
         </Routes>
 
         <footer className="footer">

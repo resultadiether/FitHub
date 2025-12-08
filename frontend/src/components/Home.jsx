@@ -17,94 +17,103 @@ export default function Home() {
       </section>
 
       {/* Feature Cards */}
-      <section className="features">
-        <div className="feature-card">
-          <div className="feature-icon">🎯</div>
-          <h3>Better Form</h3>
-          <p>Learn proper exercise technique with step-by-step instructions and safety tips to prevent injuries and maximize results.</p>
-        </div>
-        <div className="feature-card">
-          <div className="feature-icon">👨‍🏫</div>
-          <h3>Better Support</h3>
-          <p>Get personalized coaching and structured training plans designed for your level, whether you're a beginner or advanced.</p>
-        </div>
-        <div className="feature-card">
-          <div className="feature-icon">🥗</div>
-          <h3>Better Nutrition</h3>
-          <p>Receive tailored meal suggestions and nutrition guidance aligned with your fitness goals and lifestyle.</p>
-        </div>
-      </section>
-
-      {/* Who Benefits */}
-      <section className="section">
-        <h2>Perfect For Everyone</h2>
-        <div className="grid">
-          <div className="card">
-            <div className="card-header">
-              <div className="card-label">👶 Beginners</div>
-              <div className="card-title">Gym Novices</div>
-            </div>
-            <div className="card-body">
-              <p>New to the gym? Get detailed guidance on proper form, exercise basics, and injury prevention to build confidence from day one.</p>
-            </div>
+        <section className="features">
+          <div className="feature-card">
+            <h3 style={{ fontSize: '30px', fontWeight: '600', fontFamily: 'Times New Roman, sans-serif', marginBottom: '12px' }}>BETTER FORM</h3>
+            <p style={{ fontSize: '20px', fontFamily: 'Comic Sans', lineHeight: '1.6', textAlign: 'center', color: '#d0cec8ff' }}>Learn proper exercise technique with step-by-step instructions and safety tips to prevent injuries and maximize results.</p>
           </div>
-
-          <div className="card">
-            <div className="card-header">
-              <div className="card-label">💪 Intermediate</div>
-              <div className="card-title">Experienced Lifters</div>
-            </div>
-            <div className="card-body">
-              <p>Break through plateaus with advanced programming, form refinement, and structured plans from expert coaches.</p>
-            </div>
+          <div className="feature-card">
+            <h3 style={{ fontSize: '30px', fontWeight: '600', fontFamily: 'Times New Roman, sans-serif', marginBottom: '12px' }}>BETTER SUPPORT</h3>
+            <p style={{ fontSize: '20px', fontFamily: 'Comic Sans', lineHeight: '1.6', textAlign: 'center', color: '#d0cec8ff' }}>Get personalized coaching and structured training plans designed for your level, whether you're a beginner or advanced.</p>
           </div>
-
-          <div className="card">
-            <div className="card-header">
-              <div className="card-label">🥗 Nutrition</div>
-              <div className="card-title">Diet Support</div>
-            </div>
-            <div className="card-body">
-              <p>Struggling to align your diet with fitness goals? Get practical, easy-to-follow meal suggestions for muscle gain or fat loss.</p>
-            </div>
+          <div className="feature-card">
+            <h3 style={{ fontSize: '30px', fontWeight: '600', fontFamily: 'Times New Roman, sans-serif', marginBottom: '12px' }}>BETTER NUTRITION</h3>
+            <p style={{ fontSize: '20px', fontFamily: 'Comic Sans', lineHeight: '1.6', textAlign: 'center', color: '#d0cec8ff' }}>Receive tailored meal suggestions and nutrition guidance aligned with your fitness goals and lifestyle.</p>
           </div>
+        </section>
 
-          <div className="card">
-            <div className="card-header">
-              <div className="card-label">💰 Budget</div>
-              <div className="card-title">Affordable Coaching</div>
-            </div>
-            <div className="card-body">
-              <p>Get professional coaching without personal trainer costs. FitHub brings expert guidance to your budget.</p>
-            </div>
-          </div>
+        {/* Who Benefits */}
+          <section className="section">
+            <h2 style={{ fontSize: '36px', fontFamily: 'Arial, sans-serif', fontWeight: '700' }}>Perfect For Everyone</h2>
+            <div className="grid">
+              <Link to="/beginners" style={{ textDecoration: 'none' }}>
+                <div className="card">
+                  <div className="card-header">
+                    <div className="card-label" style={{ fontSize: '14px', fontFamily: 'Times New Roman, sans-serif' }}>Beginners</div>
+                    <div className="card-title" style={{ fontSize: '24px', fontFamily: 'Arial, sans-serif', fontWeight: '600' }}>Gym Novices</div>
+                  </div>
+                  <div className="card-body">
+                    <p style={{ fontSize: '16px', fontFamily: 'Arial, sans-serif', lineHeight: '1.5' }}>New to the gym? Get detailed guidance on proper form, exercise basics, and injury prevention to build confidence from day one.</p>
+                  </div>
+                </div>
+              </Link>
 
-          <div className="card">
-            <div className="card-header">
-              <div className="card-label">🏠 Remote</div>
-              <div className="card-title">Home Training</div>
-            </div>
-            <div className="card-body">
-              <p>Train at home with clear video tutorials, form guidance, and motivation—no gym membership required.</p>
-            </div>
-          </div>
+              <Link to="/intermediate" style={{ textDecoration: 'none' }}>
+                <div className="card">
+                  <div className="card-header">
+                    <div className="card-label" style={{ fontSize: '14px', fontFamily: 'Times New Roman, sans-serif' }}>Intermediate</div>
+                    <div className="card-title" style={{ fontSize: '24px', fontFamily: 'Arial, sans-serif', fontWeight: '600' }}>Experienced Lifters</div>
+                  </div>
+                  <div className="card-body">
+                    <p style={{ fontSize: '16px', fontFamily: 'Arial, sans-serif', lineHeight: '1.5' }}>Break through plateaus with advanced programming, form refinement, and structured plans from expert coaches.</p>
+                  </div>
+                </div>
+              </Link>
 
-          <div className="card">
-            <div className="card-header">
-              <div className="card-label">🎯 Goals</div>
-              <div className="card-title">Goal Achievement</div>
-            </div>
-            <div className="card-body">
-              <p>Whether you want to build muscle, lose weight, or get fit, FitHub keeps you motivated and on track.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+              <Link to="/nutrition-guide" style={{ textDecoration: 'none' }}>
+                <div className="card">
+                  <div className="card-header">
+                    <div className="card-label" style={{ fontSize: '14px', fontFamily: 'Times New Roman, sans-serif' }}> Nutrition</div>
+                    <div className="card-title" style={{ fontSize: '24px', fontFamily: 'Arial, sans-serif', fontWeight: '600' }}>Diet Support</div>
+                  </div>
+                  <div className="card-body">
+                    <p style={{ fontSize: '16px', fontFamily: 'Arial, sans-serif', lineHeight: '1.5' }}>Struggling to align your diet with fitness goals? Get practical, easy-to-follow meal suggestions for muscle gain or fat loss.</p>
+                  </div>
+                </div>
+              </Link>
 
-      {/* CTA Section */}
-      <section className="section" style={{ textAlign: 'center', background: '#f0f4ff', padding: '80px 20px', borderRadius: '10px', marginTop: '40px' }}>
+              <Link to="/budget-friendly" style={{ textDecoration: 'none' }}>
+                <div className="card">
+                  <div className="card-header">
+                    <div className="card-label" style={{ fontSize: '14px', fontFamily: 'Times New Roman, sans-serif' }}> Budget</div>
+                    <div className="card-title" style={{ fontSize: '24px', fontFamily: 'Arial, sans-serif', fontWeight: '600' }}>Affordable Coaching</div>
+                  </div>
+                  <div className="card-body">
+                    <p style={{ fontSize: '16px', fontFamily: 'Arial, sans-serif', lineHeight: '1.5' }}>Get professional coaching without personal trainer costs. FitHub brings expert guidance to your budget.</p>
+                  </div>
+                </div>
+              </Link>
+
+              <Link to="/home-training" style={{ textDecoration: 'none' }}>
+                <div className="card">
+                  <div className="card-header">
+                    <div className="card-label" style={{ fontSize: '14px', fontFamily: 'Times New Roman, sans-serif' }}> Remote</div>
+                    <div className="card-title" style={{ fontSize: '24px', fontFamily: 'Arial, sans-serif', fontWeight: '600' }}>Home Training</div>
+                  </div>
+                  <div className="card-body">
+                    <p style={{ fontSize: '16px', fontFamily: 'Arial, sans-serif', lineHeight: '1.5' }}>Train at home with clear video tutorials, form guidance, and motivation—no gym membership required.</p>
+                  </div>
+                </div>
+              </Link>
+
+              <Link to="/goals" style={{ textDecoration: 'none' }}>
+                <div className="card">
+                  <div className="card-header">
+                    <div className="card-label" style={{ fontSize: '14px', fontFamily: 'Times New Roman, sans-serif' }}> Goals</div>
+                    <div className="card-title" style={{ fontSize: '24px', fontFamily: 'Arial, sans-serif', fontWeight: '600' }}>Goal Achievement</div>
+                  </div>
+                  <div className="card-body">
+                    <p style={{ fontSize: '16px', fontFamily: 'Arial, sans-serif', lineHeight: '1.5' }}>Whether you want to build muscle, lose weight, or get fit, FitHub keeps you motivated and on track.</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </section>
+
+          {/* CTA Section */}
+      <section className="section" style={{ textAlign: 'center', background: 'rgba(45, 63, 118, 0.92)', padding: '80px 20px', borderRadius: '10px', marginTop: '40px' }}>
         <h2>Ready to Transform Your Fitness?</h2>
-        <p style={{ fontSize: '18px', color: '#666', marginBottom: '30px', maxWidth: '600px', margin: '0 auto 30px' }}>
+        <p style={{ fontSize: '18px', color: '#d0cec8ff', marginBottom: '30px', maxWidth: '600px', margin: '0 auto 30px' }}>
           Join thousands of users on their journey to better form, better support, and better nutrition.
         </p>
         <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
