@@ -16,12 +16,12 @@ export default function BudgetFriendly() {
         
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               💰 Why FitHub is Affordable
@@ -37,12 +37,12 @@ export default function BudgetFriendly() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               📊 Cost Comparison
@@ -60,12 +60,12 @@ export default function BudgetFriendly() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               💡 Money-Saving Tips
@@ -81,12 +81,12 @@ export default function BudgetFriendly() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               📋 What's Included
@@ -103,7 +103,7 @@ export default function BudgetFriendly() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #a89968 0%, #8b7d5f 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',

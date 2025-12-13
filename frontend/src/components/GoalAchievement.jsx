@@ -16,12 +16,12 @@ export default function GoalAchievement() {
         
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               🎯 Common Fitness Goals
@@ -37,12 +37,12 @@ export default function GoalAchievement() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               📊 Goal Setting Framework (SMART)
@@ -66,12 +66,12 @@ export default function GoalAchievement() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               💪 Goal-Specific Strategies
@@ -100,12 +100,12 @@ export default function GoalAchievement() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               📈 Track Your Progress
@@ -122,12 +122,12 @@ export default function GoalAchievement() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
             color: '#e8e8e8',
-            borderLeft: '5px solid #a89968'
+            borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
               🔥 Motivation & Accountability
@@ -144,7 +144,7 @@ export default function GoalAchievement() {
           </div>
 
           <div style={{ 
-            background: 'linear-gradient(135deg, #a89968 0%, #8b7d5f 100%)',
+            background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
             borderRadius: '12px',
             marginBottom: '40px',
