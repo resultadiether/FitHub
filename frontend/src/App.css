@@ -11,7 +11,7 @@ html, body, #root {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(180deg, #060606 0%, #060606 50%, #060606 100%);
+  background: radial-gradient(ellipse at center,rgba(53, 109, 112, 1) 0%,rgba(31, 31, 46, 1) 100%);
   color: #e8e8e8;
   min-height: 100vh;
 }
@@ -156,7 +156,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
+  background: radial-gradient(ellipse at center, rgba(53, 109, 112) 0%, rgba(31, 31, 46, 1) 100%);
   z-index: 1;
 }
 

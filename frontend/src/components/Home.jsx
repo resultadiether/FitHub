@@ -111,7 +111,7 @@ export default function Home() {
           </section>
 
           {/* CTA Section */}
-      <section className="section" style={{ textAlign: 'center', background: 'linear-gradient(135deg, rgba(13, 122, 132, 1), rgba(31, 31, 46, 1))', padding: '80px 20px', borderRadius: '10px', marginTop: '40px' }}>
+      <section className="section" style={{ textAlign: 'center', background: 'linear-gradient(135deg, rgba(13, 122, 132, 1) 0%, rgba(31, 31, 46, 1) 100%)', padding: '80px 20px', borderRadius: '10px', marginTop: '40px' }}>
         <h2>Ready to Transform Your Fitness?</h2>
         <p style={{ fontSize: '18px', color: '#d0cec8ff', marginBottom: '30px', maxWidth: '600px', margin: '0 auto 30px' }}>
           Join thousands of users on their journey to better form, better support, and better nutrition.
