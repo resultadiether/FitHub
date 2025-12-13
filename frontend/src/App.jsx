@@ -22,7 +22,7 @@ export default function App() {
         <nav className="navbar">
           <div className="navbar-container">
             <Link to="/" className="navbar-brand">
-              💪 FitHub
+               FitHub
             </Link>
             <button 
               className="mobile-toggle"
