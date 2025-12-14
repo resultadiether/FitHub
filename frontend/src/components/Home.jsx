@@ -32,7 +32,6 @@ export default function Home() {
 
   return (
     <main>
-      /* Hero Section */
       <section className="hero">
         <div className="hero-content">
           <h1>Your Complete Fitness Journey</h1>

@@ -19,6 +19,10 @@ switch ($route) {
     case 'home':
         require_once __DIR__ . '/routes/homeRoutes.php';
         break;
+
+    case 'auth':
+    require_once __DIR__ . '/routes/authRoutes.php';
+    break;    
     
     default:
         http_response_code(404);
