@@ -12,6 +12,7 @@ import BudgetFriendly from './components/BudgetFriendly'
 import HomeTraining from './components/HomeTraining'
 import GoalAchievement from './components/GoalAchievement'
 import Login from './components/Login'
+import Register from './components/Register'
 import './App.css'
 
 export default function App() {
@@ -54,6 +55,7 @@ export default function App() {
           <Route path="/home-training" element={<HomeTraining />} />
           <Route path="/goals" element={<GoalAchievement />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
 
         <footer className="footer">
