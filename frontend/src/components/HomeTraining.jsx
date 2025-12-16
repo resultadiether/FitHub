@@ -24,7 +24,7 @@ export default function HomeTraining() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              🏠 Why Train at Home?
+               Why Train at Home?
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>No Gym Commute:</strong> Save 30-60 minutes per day on travel</li>
@@ -45,7 +45,7 @@ export default function HomeTraining() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              🛠️ Home Gym Setup (Budget Options)
+               Home Gym Setup (Budget Options)
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '1.8' }}>
               <p><strong>Minimal Setup ($0-100):</strong></p>
@@ -77,7 +77,7 @@ export default function HomeTraining() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              💪 Bodyweight Exercises (No Equipment)
+               Bodyweight Exercises (No Equipment)
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Chest:</strong> Push-ups, Diamond Push-ups, Archer Push-ups</li>
@@ -98,7 +98,7 @@ export default function HomeTraining() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              📋 Sample Home Workout (20-30 minutes)
+               Sample Home Workout (20-30 minutes)
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '1.8' }}>
               <p><strong>Warm-up (3 min):</strong> 10 jumping jacks, 10 arm circles each direction, light stretching</p>

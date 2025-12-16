@@ -14,6 +14,164 @@ export default function Beginners() {
       <section className="section">
         <h2>For Beginners</h2>
         
+        {/* Muscle Group Cards */}
+        <div style={{ 
+          display: 'flex', 
+          flexWrap: 'wrap', 
+          gap: '30px', 
+          justifyContent: 'center',
+          marginBottom: '60px',
+          maxWidth: '1200px',
+          margin: '0 auto 60px'
+        }}>
+          
+          {/* Upper Body Card */}
+          <div style={{
+              background: 'linear-gradient(135deg, #1f1f2e 0%, #0d7a84 100%)',
+              borderRadius: '12px',
+              padding: '30px',
+              textAlign: 'center',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+              borderTop: '5px solid #a89968',
+              transition: 'transform 0.3s ease'
+            }}>
+            <h3 style={{ 
+                color: '#a89968', 
+                marginBottom: '15px', 
+                fontSize: '24px', 
+                fontWeight: '700',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '10px'
+              }}>
+              Upper Body
+            </h3>
+            <p style={{ 
+              fontSize: '14px', 
+              lineHeight: '1.6',
+              marginBottom: '20px',
+              color: '#e8e8e8'
+            }}>
+              Focus on chest, back, shoulders, and arms. Build upper body strength with compound movements.
+            </p>
+            <div style={{  
+              padding: '15px', 
+              borderRadius: '8px',
+              marginTop: '15px'
+            }}>
+               <ul style={{ 
+                textAlign: 'left', 
+                color: '#c0c0c0', 
+                fontSize: '14px',
+                lineHeight: '1.8',
+                marginBottom: '25px'
+              }}>
+                <li>Bench Press</li>
+                <li>Rows</li>
+                <li>Shoulder Press</li>
+                <li>Lat Pulldowns</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Lower Body Card */}
+          <div style={{
+              background: 'linear-gradient(135deg, #1f1f2e 0%, #0d7a84 100%)',
+              borderRadius: '12px',
+              padding: '30px',
+              textAlign: 'center',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+              borderTop: '5px solid #a89968',
+              transition: 'transform 0.3s ease'
+            }}>
+            <h3 style={{ 
+                color: '#a89968', 
+                marginBottom: '15px', 
+                fontSize: '24px', 
+                fontWeight: '700',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '10px'
+              }}>
+               Lower Body
+            </h3>
+            <p style={{ 
+              fontSize: '14px', 
+              lineHeight: '1.6',
+              marginBottom: '20px',
+              color: '#e8e8e8'
+            }}>
+              Strengthen legs, glutes, and calves. Build a solid foundation for all movements.
+            </p>
+            <div style={{ 
+              
+              padding: '15px', 
+              borderRadius: '8px',
+              marginTop: '15px'
+            }}>
+               <ul style={{ 
+                textAlign: 'left', 
+                color: '#c0c0c0', 
+                fontSize: '14px',
+                lineHeight: '1.8',
+                marginBottom: '25px'
+              }}>
+                <li>Squats</li>
+                <li>Leg Press</li>
+                <li>Oblique development</li>
+                <li>Stability training</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Core Card */}
+          <div style={{
+              background: 'linear-gradient(135deg, #1f1f2e 0%, #0d7a84 100%)',
+              borderRadius: '12px',
+              padding: '30px',
+              textAlign: 'center',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+              borderTop: '5px solid #a89968',
+              transition: 'transform 0.3s ease'
+            }}>
+            <h3 style={{ 
+                color: '#a89968', 
+                marginBottom: '15px', 
+                fontSize: '24px', 
+                fontWeight: '700',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '10px'
+              }}>
+               Core
+            </h3>
+            <p style={{ 
+              fontSize: '14px', 
+              lineHeight: '1.6',
+              marginBottom: '20px',
+              color: '#e8e8e8'
+            }}>
+              Strengthen your abs and lower back. Essential for stability and preventing injuries.
+            </p>
+             <ul style={{ 
+                textAlign: 'left', 
+                color: '#c0c0c0', 
+                fontSize: '14px',
+                lineHeight: '1.8',
+                marginBottom: '25px'
+              }}>
+                <li>Planks</li>
+                <li>Deadlift</li>
+                <li>Ab Work</li>
+                <li>Rotational exercises</li> 
+              </ul>
+          </div>
+        </div>
+
+        {/* Original content continues */}
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ 
             background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
@@ -24,7 +182,7 @@ export default function Beginners() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              🎯 What You'll Learn
+               What You'll Learn
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Proper Exercise Form:</strong> Master the fundamentals with step-by-step video tutorials</li>
@@ -45,7 +203,7 @@ export default function Beginners() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              📋 Your First Week Plan
+               Your First Week Plan
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '1.8' }}>
               <p><strong>Day 1-2: Lower Body Basics</strong></p>
@@ -71,7 +229,7 @@ export default function Beginners() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              ⚠️ Common Mistakes to Avoid
+               Common Mistakes to Avoid
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Using Too Much Weight Too Soon:</strong> Start light, focus on form first</li>
@@ -82,7 +240,7 @@ export default function Beginners() {
               <li><strong>Comparing Yourself to Others:</strong> Everyone's on their own journey</li>
             </ul>
           </div>
-
+        
           <div style={{ 
             background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',

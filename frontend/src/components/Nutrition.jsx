@@ -120,12 +120,12 @@ export default function Nutrition() {
   const currentPlan = mealPlans[fitnessGoal]
 
   const tips = [
-    '💧 Drink 3-4 liters of water daily for optimal performance and recovery.',
-    '🥗 Prioritize whole foods: chicken, fish, eggs, rice, oats, vegetables, fruits.',
-    '⏰ Eat every 3-4 hours to maintain energy and muscle protein synthesis.',
-    '🏋️ Time carbs around your workout for better energy and recovery.',
-    '🛡️ Don\'t go too low in calories; aim for gradual, sustainable changes.',
-    '📊 Track your intake using apps like MyFitnessPal for 2 weeks to learn portions.'
+    ' Drink 3-4 liters of water daily for optimal performance and recovery.',
+    ' Prioritize whole foods: chicken, fish, eggs, rice, oats, vegetables, fruits.',
+    ' Eat every 3-4 hours to maintain energy and muscle protein synthesis.',
+    ' Time carbs around your workout for better energy and recovery.',
+    ' Don\'t go too low in calories; aim for gradual, sustainable changes.',
+    ' Track your intake using apps like MyFitnessPal for 2 weeks to learn portions.'
   ]
 
   return (
@@ -138,6 +138,134 @@ export default function Nutrition() {
       </section>
 
       <section className="section">
+        {/* Upper, Lower, Core Cards Section */}
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '30px',
+          marginBottom: '60px'
+        }}>
+          {/* Upper Body Card */}
+          <div style={{
+            background: 'linear-gradient(135deg, #1f1f2e 0%, #667eea 100%)',
+            borderRadius: '12px',
+            padding: '30px',
+            textAlign: 'center',
+            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+            borderTop: '5px solid #a89968',
+            transition: 'transform 0.3s ease'
+          }}>
+            <h3 style={{ 
+              color: '#a89968', 
+              marginBottom: '15px', 
+              fontSize: '24px', 
+              fontWeight: '700',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '10px'
+            }}>
+              <span></span> Upper Body Nutrition
+            </h3>
+            <p style={{ color: '#e8e8e8', marginBottom: '20px', lineHeight: '1.6' }}>
+              High-protein foods for chest, back, shoulder, and arm development
+            </p>
+            <ul style={{ 
+              textAlign: 'left', 
+              color: '#c0c0c0', 
+              fontSize: '14px',
+              lineHeight: '1.8',
+              marginBottom: '25px'
+            }}>
+              <li>Chicken breast, turkey, lean beef</li>
+              <li>Salmon, tuna, mackerel</li>
+              <li>Eggs, Greek yogurt, cottage cheese</li>
+              <li>Whey & casein protein</li>
+            </ul>
+            
+          </div>
+
+          {/* Lower Body Card */}
+          <div style={{
+            background: 'linear-gradient(135deg, #1f1f2e 0%, #667eea 100%)',
+            borderRadius: '12px',
+            padding: '30px',
+            textAlign: 'center',
+            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+            borderTop: '5px solid #a89968',
+            transition: 'transform 0.3s ease'
+          }}>
+            <h3 style={{ 
+              color: '#a89968', 
+              marginBottom: '15px', 
+              fontSize: '24px', 
+              fontWeight: '700',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '10px'
+            }}>
+              <span></span> Lower Body Nutrition
+            </h3>
+            <p style={{ color: '#e8e8e8', marginBottom: '20px', lineHeight: '1.6' }}>
+              Energy-dense foods for powerful legs and glute development
+            </p>
+            <ul style={{ 
+              textAlign: 'left', 
+              color: '#c0c0c0', 
+              fontSize: '14px',
+              lineHeight: '1.8',
+              marginBottom: '25px'
+            }}>
+              <li>Sweet potatoes, brown rice, quinoa</li>
+              <li>Lean beef, salmon, eggs</li>
+              <li>Oats, whole grain pasta</li>
+              <li>Complex carbs for energy</li>
+            </ul>
+         
+          </div>
+
+          {/* Core Card */}
+          <div style={{
+            background: 'linear-gradient(135deg, #1f1f2e 0%, #667eea 100%)',
+            borderRadius: '12px',
+            padding: '30px',
+            textAlign: 'center',
+            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+            borderTop: '5px solid #a89968',
+            transition: 'transform 0.3s ease'
+          }}>
+            <h3 style={{ 
+              color: '#a89968', 
+              marginBottom: '15px', 
+              fontSize: '24px', 
+              fontWeight: '700',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '10px'
+            }}>
+              <span></span> Core Nutrition
+            </h3>
+            <p style={{ color: '#e8e8e8', marginBottom: '20px', lineHeight: '1.6' }}>
+              Foods for core strength, stability, and definition
+            </p>
+            <ul style={{ 
+              textAlign: 'left', 
+              color: '#c0c0c0', 
+              fontSize: '14px',
+              lineHeight: '1.8',
+              marginBottom: '25px'
+            }}>
+              <li>Leafy greens, broccoli, spinach</li>
+              <li>Avocado, nuts, olive oil</li>
+              <li>Lean proteins for definition</li>
+              <li>Low-sodium, anti-inflammatory foods</li>
+            </ul>
+            
+          </div>
+        </div>
+
         {/* Goal Selector */}
         <div style={{ textAlign: 'center', marginBottom: '50px' }}>
           <h3 style={{ marginBottom: '20px', color: '#333' }}>Select Your Fitness Goal</h3>
@@ -146,13 +274,13 @@ export default function Nutrition() {
               className={`tab-btn ${fitnessGoal === 'muscle-gain' ? 'active' : ''}`}
               onClick={() => setFitnessGoal('muscle-gain')}
             >
-              💪 Muscle Gain
+               Muscle Gain
             </button>
             <button
               className={`tab-btn ${fitnessGoal === 'fat-loss' ? 'active' : ''}`}
               onClick={() => setFitnessGoal('fat-loss')}
             >
-              🔥 Fat Loss
+               Fat Loss
             </button>
           </div>
         </div>

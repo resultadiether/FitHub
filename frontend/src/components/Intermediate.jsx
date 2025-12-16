@@ -15,6 +15,134 @@ export default function Intermediate() {
         <h2>For Intermediate Athletes</h2>
         
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          {/* Upper, Lower, Core Cards Section */}
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '30px',
+            marginBottom: '60px'
+          }}>
+            {/* Upper Body Card */}
+            <div style={{
+              background: 'linear-gradient(135deg, #1f1f2e 0%, #0d7a84 100%)',
+              borderRadius: '12px',
+              padding: '30px',
+              textAlign: 'center',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+              borderTop: '5px solid #a89968',
+              transition: 'transform 0.3s ease'
+            }}>
+              <h3 style={{ 
+                color: '#a89968', 
+                marginBottom: '15px', 
+                fontSize: '24px', 
+                fontWeight: '700',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '10px'
+              }}>
+                <span></span> Upper Body
+              </h3>
+              <p style={{ color: '#e8e8e8', marginBottom: '20px', lineHeight: '1.6' }}>
+                Advanced chest, back, shoulder, and arm training techniques for maximum upper body development
+              </p>
+              <ul style={{ 
+                textAlign: 'left', 
+                color: '#c0c0c0', 
+                fontSize: '14px',
+                lineHeight: '1.8',
+                marginBottom: '25px'
+              }}>
+                <li>Bench Press variations</li>
+                <li>Pull-up progressions</li>
+                <li>Shoulder stability work</li>
+                <li>Arm specialization</li>
+              </ul>
+              
+            </div>
+
+            {/* Lower Body Card */}
+            <div style={{
+              background: 'linear-gradient(135deg, #1f1f2e 0%, #0d7a84 100%)',
+              borderRadius: '12px',
+              padding: '30px',
+              textAlign: 'center',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+              borderTop: '5px solid #a89968',
+              transition: 'transform 0.3s ease'
+            }}>
+              <h3 style={{ 
+                color: '#a89968', 
+                marginBottom: '15px', 
+                fontSize: '24px', 
+                fontWeight: '700',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '10px'
+              }}>
+                <span></span> Lower Body
+              </h3>
+              <p style={{ color: '#e8e8e8', marginBottom: '20px', lineHeight: '1.6' }}>
+                Build powerful legs and glutes with advanced squat, deadlift, and lower body variations
+              </p>
+              <ul style={{ 
+                textAlign: 'left', 
+                color: '#c0c0c0', 
+                fontSize: '14px',
+                lineHeight: '1.8',
+                marginBottom: '25px'
+              }}>
+                <li>Squat variations</li>
+                <li>Deadlift progressions</li>
+                <li>Glute development</li>
+                <li>Leg strength & size</li>
+              </ul>
+ 
+            </div>
+
+            {/* Core Card */}
+            <div style={{
+              background: 'linear-gradient(135deg, #1f1f2e 0%, #0d7a84 100%)',
+              borderRadius: '12px',
+              padding: '30px',
+              textAlign: 'center',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+              borderTop: '5px solid #a89968',
+              transition: 'transform 0.3s ease'
+            }}>
+              <h3 style={{ 
+                color: '#a89968', 
+                marginBottom: '15px', 
+                fontSize: '24px', 
+                fontWeight: '700',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '10px'
+              }}>
+                <span></span> Core
+              </h3>
+              <p style={{ color: '#e8e8e8', marginBottom: '20px', lineHeight: '1.6' }}>
+                Advanced core stability, strength, and rotational power for athletic performance
+              </p>
+              <ul style={{ 
+                textAlign: 'left', 
+                color: '#c0c0c0', 
+                fontSize: '14px',
+                lineHeight: '1.8',
+                marginBottom: '25px'
+              }}>
+                <li>Anti-rotation exercises</li>
+                <li>Dynamic core movements</li>
+                <li>Oblique development</li>
+                <li>Stability training</li>
+              </ul>
+             
+            </div>
+          </div>
+
           <div style={{ 
             background: 'linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%)',
             padding: '40px',
@@ -24,7 +152,7 @@ export default function Intermediate() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              🎯 What You'll Master
+               What You'll Master
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Advanced Programming:</strong> Periodization, intensity techniques, and training phases</li>
@@ -45,7 +173,7 @@ export default function Intermediate() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              📋 Advanced Training Techniques
+               Advanced Training Techniques
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '1.8' }}>
               <p><strong>Hypertrophy Focus (Muscle Gain)</strong></p>
@@ -71,7 +199,7 @@ export default function Intermediate() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              💪 Plateau-Breaking Strategies
+               Plateau-Breaking Strategies
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Progressive Overload:</strong> Increase weight, reps, sets, or volume systematically</li>

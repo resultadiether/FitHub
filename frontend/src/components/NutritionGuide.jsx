@@ -24,7 +24,7 @@ export default function NutritionGuide() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              🥗 Nutrition Fundamentals
+               Nutrition Fundamentals
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Calorie Balance:</strong> Understand surplus, deficit, and maintenance</li>
@@ -45,7 +45,7 @@ export default function NutritionGuide() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              💪 Build Muscle (Hypertrophy) Nutrition
+               Build Muscle (Hypertrophy) Nutrition
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '1.8' }}>
               <p><strong>Caloric Surplus:</strong> Eat 300-500 calories above maintenance</p>
@@ -71,7 +71,7 @@ export default function NutritionGuide() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              ⚖️ Fat Loss Nutrition
+               Fat Loss Nutrition
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '1.8' }}>
               <p><strong>Caloric Deficit:</strong> Eat 300-500 calories below maintenance</p>
@@ -97,7 +97,7 @@ export default function NutritionGuide() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              📋 Sample Daily Meal Plan (2500 Calories)
+               Sample Daily Meal Plan (2500 Calories)
             </h3>
             <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
               <p><strong>Breakfast (600 cal):</strong> 3 eggs, 2 slices whole wheat toast, 1 banana, peanut butter</p>

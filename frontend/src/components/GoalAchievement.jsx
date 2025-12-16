@@ -24,7 +24,7 @@ export default function GoalAchievement() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              🎯 Common Fitness Goals
+               Common Fitness Goals
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Build Muscle Mass:</strong> Gain strength and size with hypertrophy training</li>
@@ -45,7 +45,7 @@ export default function GoalAchievement() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              📊 Goal Setting Framework (SMART)
+               Goal Setting Framework (SMART)
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '1.8' }}>
               <p><strong>Specific:</strong> "Build 10 lbs of muscle" not "get bigger"</p>
@@ -74,7 +74,7 @@ export default function GoalAchievement() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              💪 Goal-Specific Strategies
+               Goal-Specific Strategies
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '1.8' }}>
               <p><strong>Goal: Build Muscle (3-6 months)</strong></p>
@@ -108,7 +108,7 @@ export default function GoalAchievement() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              📈 Track Your Progress
+               Track Your Progress
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Weekly Weigh-Ins:</strong> Track bodyweight trends</li>
@@ -130,7 +130,7 @@ export default function GoalAchievement() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              🔥 Motivation & Accountability
+               Motivation & Accountability
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Join Our Community:</strong> Connect with others on their fitness journey</li>

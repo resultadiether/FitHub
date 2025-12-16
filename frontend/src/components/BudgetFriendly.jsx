@@ -24,7 +24,7 @@ export default function BudgetFriendly() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              💰 Why FitHub is Affordable
+               Why FitHub is Affordable
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>No Personal Trainer Costs:</strong> Access expert guidance for a fraction of 1-on-1 coaching</li>
@@ -45,17 +45,17 @@ export default function BudgetFriendly() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              📊 Cost Comparison
+               Cost Comparison
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '2' }}>
               <p><strong>Personal Trainer (1-on-1):</strong> $50-200+ per session</p>
-              <p style={{ marginLeft: '20px', color: '#c0c0c0' }}>💸 $200-800/month for consistent training</p>
+              <p style={{ marginLeft: '20px', color: '#c0c0c0' }}> $200-800/month for consistent training</p>
               
               <p><strong>Gym Membership:</strong> $20-200+ per month</p>
-              <p style={{ marginLeft: '20px', color: '#c0c0c0' }}>💸 Limited form guidance and programming</p>
+              <p style={{ marginLeft: '20px', color: '#c0c0c0' }}> Limited form guidance and programming</p>
               
               <p><strong>FitHub Premium:</strong> One-time investment</p>
-              <p style={{ marginLeft: '20px', color: '#a89968' }}>✅ Lifetime access to all content and updates</p>
+              <p style={{ marginLeft: '20px', color: '#a89968' }}> Lifetime access to all content and updates</p>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ export default function BudgetFriendly() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              💡 Money-Saving Tips
+               Money-Saving Tips
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
               <li><strong>Start at Home:</strong> Many exercises require no equipment</li>
@@ -89,16 +89,16 @@ export default function BudgetFriendly() {
             borderLeft: '5px solid #aac5c9'
           }}>
             <h3 style={{ color: '#a89968', marginBottom: '15px', fontSize: '28px', fontWeight: '700' }}>
-              📋 What's Included
+               What's Included
             </h3>
             <ul style={{ fontSize: '16px', lineHeight: '1.8', marginLeft: '20px' }}>
-              <li>✅ 100+ exercise tutorials with form breakdowns</li>
-              <li>✅ Beginner to Advanced training programs</li>
-              <li>✅ Nutrition guides for muscle gain and fat loss</li>
-              <li>✅ Progress tracking tools</li>
-              <li>✅ Community access for motivation</li>
-              <li>✅ Regular updates and new content</li>
-              <li>✅ No hidden fees or subscriptions</li>
+              <li> 100+ exercise tutorials with form breakdowns</li>
+              <li> Beginner to Advanced training programs</li>
+              <li> Nutrition guides for muscle gain and fat loss</li>
+              <li> Progress tracking tools</li>
+              <li> ommunity access for motivation</li>
+              <li> Regular updates and new content</li>
+              <li> No hidden fees or subscriptions</li>
             </ul>
           </div>
 
