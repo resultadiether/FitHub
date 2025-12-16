@@ -56,6 +56,7 @@ export default function App() {
           <Route path="/home-training" element={<HomeTraining />} />
           <Route path="/goals" element={<GoalAchievement />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
 
         <footer className="footer">

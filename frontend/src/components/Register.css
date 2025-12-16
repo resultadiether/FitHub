@@ -1,0 +1,120 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem;
+  background: linear-gradient(180deg, #060606 0%, #060606 50%, #060606 100%);
+}
+
+.register-card {
+  background: linear-gradient(135deg, #0d7a84 0%, #1f1f2e 100%);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(168, 153, 104, 0.15);
+  width: 100%;
+  max-width: 420px;
+  border-left: 5px solid #aac5c9;
+  color: #e8e8e8;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(168, 153, 104, 0.25);
+  border-left-color: #c4af7f;
+}
+
+.register-card h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #a89968;
+  font-size: 26px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #e8e8e8;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #a89968;
+  border-radius: 8px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #e8e8e8;
+  transition: all 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #c4af7f;
+  box-shadow: 0 0 0 3px rgba(196, 175, 127, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.error-message {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.08);
+  border: 1px solid #ff6b6b;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px 35px;
+  background: #a89968;
+  color: white;
+  border: 2px solid #a89968;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background: #c4af7f;
+  border-color: #c4af7f;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(168, 153, 104, 0.3);
+}
+
+button[type="submit"]:disabled {
+  background: #666;
+  border-color: #666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #c0c0c0;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #a89968;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover { color: #c4af7f; text-decoration: underline; }
