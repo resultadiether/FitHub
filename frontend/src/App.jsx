@@ -12,7 +12,6 @@ import BudgetFriendly from './components/BudgetFriendly'
 import HomeTraining from './components/HomeTraining'
 import GoalAchievement from './components/GoalAchievement'
 import Login from './components/Login'
-import MuscleGroupGallery from './components/MuscleGroupGallery' // Import the new component
 import './App.css'
 
 export default function App() {
@@ -49,14 +48,12 @@ export default function App() {
           <Route path="/coaching" element={<Coaching />} />
           <Route path="/nutrition" element={<Nutrition />} />
           <Route path="/beginners" element={<Beginners />} />
-          <Route path="/beginners/:muscleGroupId" element={<MuscleGroupGallery />} /> {/* Add this line */}
           <Route path="/intermediate" element={<Intermediate />} />
           <Route path="/nutrition-guide" element={<NutritionGuide />} />
           <Route path="/budget-friendly" element={<BudgetFriendly />} />
           <Route path="/home-training" element={<HomeTraining />} />
           <Route path="/goals" element={<GoalAchievement />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
         </Routes>
 
         <footer className="footer">
