@@ -11,6 +11,7 @@ import NutritionGuide from './components/NutritionGuide'
 import BudgetFriendly from './components/BudgetFriendly'
 import HomeTraining from './components/HomeTraining'
 import GoalAchievement from './components/GoalAchievement'
+import Login from './components/Login'
 import './App.css'
 
 export default function App() {
@@ -35,7 +36,7 @@ export default function App() {
               <li><Link to="/exercises" onClick={() => setMobileMenuOpen(false)}>Exercises</Link></li>
               <li><Link to="/coaching" onClick={() => setMobileMenuOpen(false)}>Coaching</Link></li>
               <li><Link to="/nutrition" onClick={() => setMobileMenuOpen(false)}>Nutrition</Link></li>
-              <li><Link to="#" className="btn-login">Login</Link></li>
+              <li><Link to="/login" className="btn-login" onClick={() => setMobileMenuOpen(false)}>Login</Link></li>
             </ul>
           </div>
         </nav>
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="/budget-friendly" element={<BudgetFriendly />} />
           <Route path="/home-training" element={<HomeTraining />} />
           <Route path="/goals" element={<GoalAchievement />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
 
         <footer className="footer">
