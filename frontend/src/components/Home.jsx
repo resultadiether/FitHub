@@ -117,7 +117,7 @@ export default function Home() {
           Join thousands of users on their journey to better form, better support, and better nutrition.
         </p>
         <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <button className="btn btn-primary" style={{ background: '#667eea', color: 'white' }}>Sign Up Free</button>
+          <Link to="/register" className="btn btn-primary" style={{ background: '#667eea', color: 'white', display: 'inline-block', textAlign: 'center', padding: '10px 18px', borderRadius: '6px', textDecoration: 'none' }}>Sign Up Free</Link>
           <Link to="/exercises" className="btn btn-secondary" style={{ color: '#667eea', borderColor: '#667eea' }}>Browse Exercises</Link>
         </div>
       </section>
