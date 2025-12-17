@@ -5,11 +5,21 @@ Overview
 - Backend: Laravel REST API (recommended: Laravel 10+).
 - Frontend: React (Vite or Create React App) single-page app.
 
-Quick setup (Windows PowerShell)
+🚀 Quick Start (Fast Development Setup)
+1. **Double-click `start-dev.bat`** - This will automatically start both servers
+2. Open http://localhost:5173 in your browser
+3. The app loads instantly with mock API data!
+
+⚡ Why it's fast:
+- Uses Node.js mock API server instead of Laravel during development
+- No database setup required
+- Frontend loads in seconds, not minutes
+
+Full Setup (Production/Laravel Backend)
 1) Backend (Laravel):
    # Ensure Composer & PHP are installed
-   cd c:\Users\Admin\OneDrive\Documents\Fithub\backend
-   composer create-project --prefer-dist laravel/laravel .
+   cd laravel-temp
+   composer install
    cp .env.example .env
    # configure DB in .env, then:
    php artisan key:generate
@@ -17,7 +27,7 @@ Quick setup (Windows PowerShell)
    php artisan serve --host=127.0.0.1 --port=8000
 
 2) Frontend (React using Vite recommended):
-   cd c:\Users\Admin\OneDrive\Documents\Fithub\frontend
+   cd frontend
    # using npm:
    npm install
    npm run dev
