@@ -1,0 +1,15 @@
+{
+    "name": "esqui/fit-hub",
+    "autoload": {
+        "psr-4": {
+            "Esqui\\FitHub\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jear-ai",
+            "email": "esquillojayr3@gmail.com"
+        }
+    ],
+    "require": {}
+}
