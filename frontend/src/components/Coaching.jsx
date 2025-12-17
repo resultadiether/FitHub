@@ -73,7 +73,7 @@ export default function Coaching() {
     <main>
       <section className="hero" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
         <div className="hero-content">
-          <h1>Personalized Coaching</h1>
+          <h1>PERSONALIZED COACHING</h1>
           <p>Structured training plans designed by experts for your level and goals.</p>
         </div>
       </section>
@@ -81,19 +81,19 @@ export default function Coaching() {
       <section className="section">
         {/* Experience Level Selector */}
         <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-          <h3 style={{ marginBottom: '20px', color: '#333' }}>Select Your Experience Level</h3>
+          <h3 style={{ marginBottom: '20px', color: '#ead1d1ff' }}>Select Your Experience Level</h3>
           <div className="tabs" style={{ justifyContent: 'center' }}>
             <button
               className={`tab-btn ${userLevel === 'beginner' ? 'active' : ''}`}
               onClick={() => setUserLevel('beginner')}
             >
-              👶 Beginner
+               Beginner
             </button>
             <button
               className={`tab-btn ${userLevel === 'intermediate' ? 'active' : ''}`}
               onClick={() => setUserLevel('intermediate')}
             >
-              💪 Intermediate
+               Intermediate
             </button>
           </div>
         </div>
