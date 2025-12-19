@@ -30,12 +30,19 @@ export default function Register() {
     setLoading(true)
     setBackendErrors({})
     try {
-      const response = await api.post('/auth/register', formData)
+      // Map frontend form field names to backend expected names
+      const payload = {
+        fullName: formData.name,
+        email: formData.email,
+        password: formData.password,
+        confirmPassword: formData.password_confirmation
+      }
+      const response = await api.post('/auth/register', payload)
       const { token } = response.data
       if (token) setToken(token)
       setSuccess('Account created successfully. Redirecting...')
       // Give a moment for the user to read the message then navigate
-      setTimeout(() => navigate('/'), 1500)
+      setTimeout(() => navigate('/login'), 1500)
     } catch (err) {
       if (err.message.includes('Backend service is currently unavailable')) {
         setError('Unable to connect to the server. Please check if the backend is running.')

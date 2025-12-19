@@ -95,6 +95,40 @@ body {
   cursor: pointer;
 }
 
+/* Profile avatar + dropdown */
+.nav-profile {
+  position: relative;
+}
+.avatar {
+  background: #a89968;
+  color: #1f1f2e;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  background: linear-gradient(135deg, #2a2a3e 0%, #1f1f2e 100%);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  min-width: 200px;
+  z-index: 200;
+}
+.profile-info { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.profile-name { font-weight: 700; color: #a89968; margin-bottom: 4px; }
+.profile-email { font-size: 13px; color: #ccc; }
+.profile-actions { padding-top: 8px; display:flex; justify-content:flex-end; }
+.logout-btn { background:#a89968; color:#111; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; font-weight:700 }
+
 @media (max-width: 768px) {
   .mobile-toggle {
     display: block;
