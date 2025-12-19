@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import api, { setToken } from '../services/api'
 import './Login.css'
 
@@ -11,6 +11,7 @@ export default function Login() {
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
+  const location = useLocation()
 
   const handleChange = (e) => {
     setFormData({
@@ -28,7 +29,8 @@ export default function Login() {
       const response = await api.post('/auth/login', formData)
       const { token } = response.data
       setToken(token)
-      navigate('/')
+      const dest = location.state?.from?.pathname || '/home'
+      navigate(dest)
     } catch (err) {
       if (err.message.includes('Backend service is currently unavailable')) {
         setError('Unable to connect to the server. Please check if the backend is running.')

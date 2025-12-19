@@ -15,6 +15,15 @@ import Login from './components/Login'
 import Register from './components/Register'
 import api, { getUser, clearToken } from './services/api'
 import './App.css'
+import ProtectedRoute from './components/ProtectedRoute'
+import { useLocation, Navigate } from 'react-router-dom'
+
+function NavigateToLanding(){
+  const user = getUser()
+  const location = useLocation()
+  if (user) return <Navigate to="/home" replace />
+  return <Navigate to="/login" state={{ from: location }} replace />
+}
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -47,13 +56,13 @@ function NavContent({ mobileMenuOpen, setMobileMenuOpen }) {
     clearToken()
     setUser(null)
     setShowDropdown(false)
-    navigate('/')
+    navigate('/login')
   }
   return (
     <div className="app">
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-brand">
+            <Link to="/home" className="navbar-brand">
              FitHub
           </Link>
           <button 
@@ -63,7 +72,7 @@ function NavContent({ mobileMenuOpen, setMobileMenuOpen }) {
             ☰
           </button>
           <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
-            <li><Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
+            <li><Link to="/home" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
             <li><Link to="/exercises" onClick={() => setMobileMenuOpen(false)}>Exercises</Link></li>
             <li><Link to="/coaching" onClick={() => setMobileMenuOpen(false)}>Coaching</Link></li>
             <li><Link to="/nutrition" onClick={() => setMobileMenuOpen(false)}>Nutrition</Link></li>
@@ -93,17 +102,23 @@ function NavContent({ mobileMenuOpen, setMobileMenuOpen }) {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/exercises" element={<Exercises />} />
-        <Route path="/exercises/:id" element={<ExerciseDetail />} />
-        <Route path="/coaching" element={<Coaching />} />
-        <Route path="/nutrition" element={<Nutrition />} />
-        <Route path="/beginners" element={<Beginners />} />
-        <Route path="/intermediate" element={<Intermediate />} />
-        <Route path="/nutrition-guide" element={<NutritionGuide />} />
-        <Route path="/budget-friendly" element={<BudgetFriendly />} />
-        <Route path="/home-training" element={<HomeTraining />} />
-        <Route path="/goals" element={<GoalAchievement />} />
+        {/* Root landing: redirect to /login or /home depending on auth */}
+        <Route path="/" element={<NavigateToLanding />} />
+
+        {/* Protected routes */}
+        <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+        <Route path="/exercises" element={<ProtectedRoute><Exercises /></ProtectedRoute>} />
+        <Route path="/exercises/:id" element={<ProtectedRoute><ExerciseDetail /></ProtectedRoute>} />
+        <Route path="/coaching" element={<ProtectedRoute><Coaching /></ProtectedRoute>} />
+        <Route path="/nutrition" element={<ProtectedRoute><Nutrition /></ProtectedRoute>} />
+        <Route path="/beginners" element={<ProtectedRoute><Beginners /></ProtectedRoute>} />
+        <Route path="/intermediate" element={<ProtectedRoute><Intermediate /></ProtectedRoute>} />
+        <Route path="/nutrition-guide" element={<ProtectedRoute><NutritionGuide /></ProtectedRoute>} />
+        <Route path="/budget-friendly" element={<ProtectedRoute><BudgetFriendly /></ProtectedRoute>} />
+        <Route path="/home-training" element={<ProtectedRoute><HomeTraining /></ProtectedRoute>} />
+        <Route path="/goals" element={<ProtectedRoute><GoalAchievement /></ProtectedRoute>} />
+
+        {/* Public routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
